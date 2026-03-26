@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
 import SkillsSection from "@/components/skills-section"
 import ProjectsSection from "@/components/projects-section"
@@ -13,11 +14,21 @@ export default function Home() {
         <div className="absolute bottom-0 left-1/3 h-[400px] w-[600px] translate-y-1/3 rounded-full bg-[#ED3257] opacity-25 blur-[120px]" />
       </div>
       
+      <Navbar />
+      
       <div className="relative z-10">
-        <HeroSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ContactSection />
+        <section id="inicio">
+          <HeroSection />
+        </section>
+        <section id="skills">
+          <SkillsSection />
+        </section>
+        <section id="projetos">
+          <ProjectsSection />
+        </section>
+        <section id="contato">
+          <ContactSection />
+        </section>
         <Footer />
       </div>
     </main>

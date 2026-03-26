@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 
-// Skills data with inline SVG icons
+// Skills data - Updated with inline SVG icons (no external dependencies)
 const skills = [
   { 
     name: "HTML", 
