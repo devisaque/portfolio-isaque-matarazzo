@@ -48,10 +48,6 @@ export default function Footer() {
             Feito com <Heart className="h-3 w-3 text-[#ED3257] sm:h-4 sm:w-4" /> por{" "}
             <span className="text-white">Isaque Matarazzo</span>
           </p>
-
-          <p className="text-[10px] text-gray-600 sm:text-xs">
-            © {new Date().getFullYear()} Todos os direitos reservados.
-          </p>
         </motion.div>
       </div>
     </footer>
