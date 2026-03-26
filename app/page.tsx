@@ -16,7 +16,7 @@ export default function Home() {
       
       <Navbar />
       
-      <div className="relative z-10">
+      <div className="relative z-10 pt-24 md:pt-28">
         <section id="inicio">
           <HeroSection />
         </section>
