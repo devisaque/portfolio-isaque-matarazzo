@@ -62,14 +62,18 @@ export default function HeroSection() {
 function InfoCard({ label, value, color }: { label: string; value: string; color: string }) {
   return (
     <div 
-      className="group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] p-3 sm:p-4 backdrop-blur-sm transition-all duration-300 hover:border-white/10 hover:bg-white/[0.05] w-[calc(50%-0.375rem)] sm:w-auto sm:min-w-[140px]"
-      style={{ borderLeftColor: color, borderLeftWidth: '2px' }}
+      className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/[0.05] p-3 sm:p-4 backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/[0.08] w-[calc(50%-0.375rem)] sm:w-auto sm:min-w-[140px]"
+      style={{ 
+        borderLeftColor: color, 
+        borderLeftWidth: '3px',
+        boxShadow: `0 0 20px ${color}15, inset 0 0 20px ${color}05`
+      }}
     >
-      <p className="text-[10px] sm:text-xs font-medium uppercase tracking-wider text-gray-500">{label}</p>
+      <p className="text-[10px] sm:text-xs font-medium uppercase tracking-wider" style={{ color }}>{label}</p>
       <p className="mt-1 text-sm sm:text-lg font-semibold text-white">{value}</p>
       <div 
         className="absolute inset-0 -z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        style={{ background: `radial-gradient(circle at center, ${color}10 0%, transparent 70%)` }}
+        style={{ background: `radial-gradient(circle at center, ${color}20 0%, transparent 70%)` }}
       />
     </div>
   )
