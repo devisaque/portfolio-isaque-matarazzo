@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 
-// Skills data - Updated with inline SVG icons (no external dependencies)
 const skills = [
   { 
     name: "HTML", 
@@ -103,7 +102,7 @@ export default function SkillsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative flex w-[calc(33.333%-0.5rem)] min-w-[90px] flex-col items-center justify-center gap-2 rounded-xl border border-white/5 bg-white/[0.02] p-4 backdrop-blur-sm transition-all duration-300 hover:border-white/10 hover:bg-white/[0.05] sm:w-auto sm:min-w-[130px] sm:gap-3 sm:rounded-2xl sm:p-6 md:min-w-[160px]"
+              className="group relative flex w-[calc(33.333%-0.5rem)] min-w-[90px] flex-col items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.05] p-4 backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/[0.08] sm:w-auto sm:min-w-[130px] sm:gap-3 sm:rounded-2xl sm:p-6 md:min-w-[160px]"
             >
               <div 
                 className="flex h-12 w-12 items-center justify-center rounded-lg transition-transform duration-300 group-hover:scale-110 sm:h-16 sm:w-16 sm:rounded-xl"
@@ -113,7 +112,6 @@ export default function SkillsSection() {
               </div>
               <span className="text-xs font-medium text-white sm:text-sm">{skill.name}</span>
               
-              {/* Skill level bar */}
               <div className="h-1 w-full overflow-hidden rounded-full bg-white/10">
                 <motion.div
                   initial={{ width: 0 }}
@@ -125,7 +123,6 @@ export default function SkillsSection() {
                 />
               </div>
               
-              {/* Hover glow effect */}
               <div 
                 className="absolute inset-0 -z-10 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:rounded-2xl"
                 style={{ boxShadow: `0 0 40px ${skill.color}20` }}
