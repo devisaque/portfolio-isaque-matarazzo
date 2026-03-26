@@ -15,7 +15,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    url: "https://www.linkedin.com/in/isaque-matarazzo-808891349",
+    url: "https://www.linkedin.com/in/isaque-matarazzo-808891349?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     username: "Isaque Matarazzo",
     color: "#3261ED",
     description: "Conecte-se comigo profissionalmente",
@@ -23,7 +23,7 @@ const socialLinks = [
   {
     name: "Instagram",
     icon: Instagram,
-    url: "https://www.instagram.com/_zaquee",
+    url: "https://www.instagram.com/_zaquee?igsh=MWduaTV6NDRhM3RndQ==",
     username: "@_zaquee",
     color: "#3E32ED",
     description: "Acompanhe meu dia a dia",
@@ -40,25 +40,25 @@ const socialLinks = [
 
 export default function ContactSection() {
   return (
-    <section className="relative px-6 py-20 md:px-12 lg:px-24" id="contact">
+    <section className="relative px-4 py-16 sm:px-6 md:px-12 md:py-20 lg:px-24" id="contact">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12 text-center"
+          className="mb-10 text-center sm:mb-12"
         >
-          <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+          <h2 className="mb-4 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
             Vamos <span className="text-[#ED3257]">Conectar</span>?
           </h2>
-          <p className="mx-auto max-w-2xl text-gray-400">
+          <p className="mx-auto max-w-2xl text-sm text-gray-400 sm:text-base">
             Estou sempre aberto a novas oportunidades e conversas interessantes.
             Sinta-se à vontade para entrar em contato!
           </p>
         </motion.div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-3 grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {socialLinks.map((link, index) => (
             <motion.a
               key={link.name}
@@ -69,32 +69,32 @@ export default function ContactSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative flex flex-col items-center gap-4 overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] p-6 backdrop-blur-sm transition-all duration-300 hover:border-white/10 hover:bg-white/[0.05]"
+              className="group relative flex flex-col items-center gap-3 overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] p-4 backdrop-blur-sm transition-all duration-300 hover:border-white/10 hover:bg-white/[0.05] sm:gap-4 sm:rounded-2xl sm:p-6"
             >
               {/* Icon */}
               <div 
-                className="flex h-14 w-14 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110"
+                className="flex h-10 w-10 items-center justify-center rounded-lg transition-transform duration-300 group-hover:scale-110 sm:h-14 sm:w-14 sm:rounded-xl"
                 style={{ backgroundColor: `${link.color}15` }}
               >
-                <link.icon className="h-7 w-7" style={{ color: link.color }} />
+                <link.icon className="h-5 w-5 sm:h-7 sm:w-7" style={{ color: link.color }} />
               </div>
 
               {/* Info */}
               <div className="text-center">
-                <h3 className="mb-1 font-semibold text-white">{link.name}</h3>
-                <p className="mb-2 text-sm text-gray-500">{link.username}</p>
-                <p className="text-xs text-gray-600">{link.description}</p>
+                <h3 className="mb-1 text-sm font-semibold text-white sm:text-base">{link.name}</h3>
+                <p className="mb-1 text-[10px] text-gray-500 sm:mb-2 sm:text-sm truncate max-w-full">{link.username}</p>
+                <p className="hidden text-xs text-gray-600 sm:block">{link.description}</p>
               </div>
 
               {/* Hover indicator */}
-              <div className="flex items-center gap-1 text-xs text-gray-500 opacity-0 transition-all duration-300 group-hover:opacity-100">
+              <div className="flex items-center gap-1 text-[10px] text-gray-500 opacity-0 transition-all duration-300 group-hover:opacity-100 sm:text-xs">
                 <span>Acessar</span>
-                <ExternalLink className="h-3 w-3" />
+                <ExternalLink className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
               </div>
 
               {/* Glow effect */}
               <div 
-                className="absolute inset-0 -z-10 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                className="absolute inset-0 -z-10 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:rounded-2xl"
                 style={{ boxShadow: `0 0 60px ${link.color}15` }}
               />
 
