@@ -33,6 +33,8 @@ Para oportunidades ou colaborações, as informações de contato estão dispon�
 ## Observação
 A aplicação sempre será atualizada com o tempo, com a inclusão de novos projetos e melhorias na própria aplicação e na minha carreira profissional.
 
+---
+---
 
 # Portfolio
 
