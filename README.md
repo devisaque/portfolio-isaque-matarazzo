@@ -1,35 +1,34 @@
-# portfolio-isaque-matarazzo
+# Portfólio
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Este projeto consiste em um portfólio profissional desenvolvido para apresentar meus trabalhos, habilidades técnicas e minha abordagem na construção de aplicações web modernas.
 
-## Built with v0
+O desenvolvimento foi orientado por princípios como performance, escalabilidade e experiência do usuário, seguindo boas práticas atuais da engenharia de software.
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Aplicação em produção
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_7p6UE3cWbN4PT0VncblpQGgzELC0)
+https://portfolio-isaque-matarazzo.vercel.app/
 
-## Getting Started
+## Visão geral
 
-First, run the development server:
+O portfólio reúne uma seleção de projetos que refletem minha experiência no desenvolvimento de interfaces responsivas e de alta qualidade.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Cada projeto foi estruturado com foco em arquitetura limpa, código manutenível e consistência na experiência do usuário em diferentes dispositivos e contextos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Princípios de engenharia
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Foco em performance  
+- Arquitetura escalável e sustentável  
+- Desenvolvimento orientado a componentes  
+- Responsividade e acessibilidade  
+- Padrões de código limpos e consistentes  
 
-## Learn More
+## Objetivo
 
-To learn more, take a look at the following resources:
+Este portfólio tem como objetivo centralizar e apresentar minhas experiências profissionais e competências técnicas, permitindo uma avaliação clara e objetiva do meu perfil como desenvolvedor.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## Contato
 
-<a href="https://v0.app/chat/api/kiro/clone/DevIsaque/portfolio-isaque-matarazzo" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+Para oportunidades ou colaborações, as informações de contato estão disponíveis na própria aplicação.
+
+## Observação
+A aplicação sempre será atualizada com o tempo, com a inclusão de novos projetos e melhorias na própria aplicação e na minha carreira profissional.
